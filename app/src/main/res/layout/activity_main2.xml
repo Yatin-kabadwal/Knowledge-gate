@@ -10,7 +10,7 @@
         android:id="@+id/appdev"
         android:layout_width="114dp"
         android:layout_height="130dp"
-        android:backgroundTint="@color/material_dynamic_primary0"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.164"
@@ -24,6 +24,7 @@
             android:layout_gravity="center"
             android:text="App dev"
             android:textColor="@color/white" />
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -31,7 +32,7 @@
         android:layout_width="114dp"
         android:layout_height="130dp"
         android:layout_marginEnd="28dp"
-        android:backgroundTint="@color/material_dynamic_primary0"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.877"
@@ -48,32 +49,10 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/ios"
-        android:layout_width="114dp"
-        android:layout_height="130dp"
-        android:layout_marginEnd="248dp"
-        android:layout_marginBottom="348dp"
-        android:backgroundTint="@color/material_dynamic_primary0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ios dev"
-            android:textColor="@color/white"
-            android:layout_gravity="center"/>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
         android:id="@+id/ml"
         android:layout_width="114dp"
         android:layout_height="130dp"
-        android:backgroundTint="@color/material_dynamic_primary0"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.861"
@@ -93,7 +72,7 @@
         android:layout_width="255dp"
         android:layout_height="83dp"
         android:id="@+id/contact"
-        android:backgroundTint="@color/material_dynamic_primary0"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
@@ -107,6 +86,26 @@
             android:text="Call us"
             android:layout_gravity="center"
             android:textColor="@color/white"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ios"
+        android:layout_width="114dp"
+        android:layout_height="130dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ml"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appdev"
+        app:layout_constraintVertical_bias="0.171">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ios dev"
+            android:textColor="@color/white" />
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
